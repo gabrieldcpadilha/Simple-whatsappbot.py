@@ -1,4 +1,4 @@
-# importar as bibliotecas
+# bibliotecas
 from selenium import webdriver
 import time
 from webdriver_manager.chrome import ChromeDriverManager
@@ -7,11 +7,12 @@ from selenium.webdriver.common.keys import Keys
 # navegar até o whatsapp web
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://web.whatsapp.com/')
+# tempo para autenticacao via celular
 time.sleep(20)
 
 # definir contatos e mensagem a ser enviada
-contatos = ['Aníbal Padilha', 'Bolinha Sarutaiá', 'Jean Capivara']
-mensagem = 'Aoba! (Y)'
+contatos = ['Nome contato', 'Nome contato', 'Nome contato']
+mensagem = 'Escreva sua mensagem aqui'
 
 
 # campo de pesquisa 'copyable-text selectable-text' OBS: index[0]
